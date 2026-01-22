@@ -43,7 +43,7 @@ public class SourceGenerator : IIncrementalGenerator
             var (sourceBuilder, testBuilder) = GenerateCode(ordinalRules, cardinalRules, debug);
 
             context.AddSource("PluralRule.cs", SourceText.From(sourceBuilder, Encoding.UTF8));
-            context.AddSource("PluralRuleTestTable.cs", SourceText.From(testBuilder, Encoding.UTF8));
+            //context.AddSource("PluralRuleTestTable.cs", SourceText.From(testBuilder, Encoding.UTF8));
         });
     }
 
